@@ -1,5 +1,6 @@
 # Projeto inicial de aprendizado usando tecnologia Java.
 #
+# Teste conflito
 # Obs.: Como esse é um projeto de aprendizado, é comum que
 # se tenham arquivos com limitada utilização dos recursos existentes.
 #
