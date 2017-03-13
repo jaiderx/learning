@@ -1,6 +1,7 @@
-# Projeto inicial de aprendizado usando tecnologia Java.
+# Projeto inicial de aprendizado
 #
-# Sem conflitos ok.
+# Nesse início, usarei para estudar a tecnologia Java.
+#
 # Obs.: Como esse é um projeto de aprendizado, é comum que
 # se tenham arquivos com limitada utilização dos recursos existentes.
 #
