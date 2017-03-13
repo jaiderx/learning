@@ -1,7 +1,6 @@
 import java.util.Calendar;
-//testando sincronia pelo git
-//Transformar isso aqui em método depois
 
+//Transformar tudo isso em método depois
 public class Datacompleta{
 	public static void main(String[] args){
 		
@@ -74,7 +73,7 @@ public class Datacompleta{
 			completa=nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".";
 	//Exibindo dados formatados do calendário:
 		System.out.println(completa);
-//Criar return para ser usado em outra aplicação
+//Depois criar return para ser usado em outra aplicação
 }
 
 }
