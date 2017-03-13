@@ -1,6 +1,9 @@
 import java.util.Calendar;
 
+//Teste sincronização Git
+
 //Transformar tudo isso em método depois
+
 public class Datacompleta{
 	public static void main(String[] args){
 		
