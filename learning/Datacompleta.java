@@ -1,7 +1,6 @@
 import java.util.Calendar;
 
 //Transformar tudo isso em método depois
-
 public class Datacompleta{
 	public static void main(String[] args){
 		
