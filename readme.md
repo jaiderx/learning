@@ -1,2 +1,2 @@
 # Projeto inicial de aprendizado usando tecnologia Java.
-# Seja lá veio parar aqui, saiba que ajuda é bem vinda
+# Seja lá veio parar aqui, saiba que qualquer ajuda é bem vinda
