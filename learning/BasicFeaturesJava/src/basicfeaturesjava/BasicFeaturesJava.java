@@ -1,23 +1,21 @@
 /*
  * Início dos estudos de programação  em Java
- * Jaider Xavier Jr.s
+ * Jaider Xavier Jr.
  */
 
  /* 
  * 
  * Histórico de alterações (inserido em 23/03/2017)
+ * Trabalhando com package, compilando e executando
  * Inserida a variável gendia, para dar gênero ao dia da semana
  * Melhorado aninhamento if/else - Jaider
  *
  */
-
+package basicfeaturesjava;
 import java.util.Calendar;
-//package basicfeaturesjava;
 
-/**
- *
- * @author administrator
- */
+
+
 public class BasicFeaturesJava {
 		/*Sequencia de exercícios trabalhando
 		** com variaveis e comentários no código.
