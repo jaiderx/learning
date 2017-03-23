@@ -1,9 +1,7 @@
 /*
  * Início dos estudos de programação  em Java
  * Jaider Xavier Jr.
- */
 
- /* 
  * 
  * Histórico de alterações (inserido em 23/03/2017)
  * Inseridas variáveis para melhor legibilidade no trecho de data
@@ -15,15 +13,12 @@
 package basicfeaturesjava;
 import java.util.Calendar;
 
-
-
 public class BasicFeaturesJava {
 		/*Sequencia de exercícios trabalhando
 		** com variaveis e comentários no código.
 		*/
-
 	public static void main(String[] args){
-            
+    
 		//pequenos cálculos
 		int um = 5%2; //usando percentual para extrair o mod
 		int dois = um+um;
@@ -38,12 +33,7 @@ public class BasicFeaturesJava {
 		//exibindo calculos
 		System.out.println("\n\n"+um+", "+dois+", "+tres+", "+quatro+", "+cinco+", "+seis+", "+sete+", "+oito+", "+nove);
 
-
-		//-------------Trabalhando com data
-		
-		
-
-		//Trabalhando com a classe Calendar
+		//-------------Trabalhando com data / classe Calendar
 		Calendar data2 = Calendar.getInstance();
 		
 		//Usando Método getTime
@@ -133,8 +123,7 @@ public class BasicFeaturesJava {
 		else {
 			mes="Dezembro";
 		}
-		
-			
+
 		//Exibindo dados formatados do calendário:
 		
 		String saudacao="";
@@ -157,18 +146,10 @@ public class BasicFeaturesJava {
 		
 		//Fim testes com data
 		
-		
 		//Início dos testes com números
-		
-		
 		double pi=3.14;
 		double x=5*10;
 		System.out.println("pi: "+pi+" e X: "+(int)x);
-                
-        
-                
-                
-                
+               
     }
-    
 }
