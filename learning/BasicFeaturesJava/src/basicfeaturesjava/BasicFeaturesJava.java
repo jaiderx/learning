@@ -6,6 +6,7 @@
  /* 
  * 
  * Histórico de alterações (inserido em 23/03/2017)
+ * Inseridas variáveis para melhor legibilidade no trecho de data
  * Trabalhando com package, compilando e executando
  * Inserida a variável gendia, para dar gênero ao dia da semana
  * Melhorado aninhamento if/else - Jaider
@@ -134,31 +135,37 @@ public class BasicFeaturesJava {
 		}
 		
 			
-		//Exibindo dados formatados do calendÃ¡rio:
+		//Exibindo dados formatados do calendário:
+		
+		String saudacao="";
+		int dia = data2.get(Calendar.DAY_OF_MONTH);
+		int horaint = data2.get(Calendar.HOUR_OF_DAY);
+		int ano = data2.get(Calendar.YEAR);
 
-		if (data2.get(Calendar.HOUR_OF_DAY)>5 && data2.get(Calendar.HOUR_OF_DAY) < 12){
-		//System.out.println("\n\nData completa formatada: ");
-		System.out.println("Bom dia, estamos em "+gendia+" "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
-		//System.out.println(data2);
-		//System.out.println(data2.get(Calendar.HOUR_OF_DAY));
+		if (horaint > 5 && horaint < 12){	
+		saudacao="Bom dia";
 		}
-		else if (data2.get(Calendar.HOUR_OF_DAY)>=12 && data2.get(Calendar.HOUR_OF_DAY)< 18){
-		System.out.println("Boa tarde, estamos em "+gendia+" "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
+		else if (horaint >= 12 && horaint < 18){
+		saudacao="Boa tarde";
 		}
 		else {
-		System.out.println("Boa noite, estamos em "+gendia+" "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
+		saudacao="Boa noite";
 		}
+
+		System.out.println("\n\nData completa formatada: ");
+		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mes+" de "+ano+".\n\n");
+		
 		//Fim testes com data
 		
 		
 		//Início dos testes com números
 		
-	/*	
+		
 		double pi=3.14;
 		double x=5*10;
 		System.out.println("pi: "+pi+" e X: "+(int)x);
                 
-        */
+        
                 
                 
                 
