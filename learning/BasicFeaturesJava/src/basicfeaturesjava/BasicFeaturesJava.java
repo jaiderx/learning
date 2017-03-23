@@ -6,6 +6,7 @@
  /* 
  * 
  * Histórico de alterações (inserido em 23/03/2017)
+ * Inserida a variável gendia, para dar gênero ao dia da semana
  * Melhorado aninhamento if/else - Jaider
  *
  */
@@ -62,27 +63,35 @@ public class BasicFeaturesJava {
 		
 		//Formatando dias da semana:
 		String nomedia ="";
+		String gendia ="";
 		if (data2.get(Calendar.DAY_OF_WEEK)==1){
-			nomedia="um domingo";
+			nomedia="domingo";
+			gendia="um";
 		}
 		else if (data2.get(Calendar.DAY_OF_WEEK)==2){
-			nomedia="uma segunda-Feira";
+			nomedia="segunda-Feira";
+			gendia="uma";
 		}
 		else if (data2.get(Calendar.DAY_OF_WEEK)==3){
-			nomedia="uma terca-Feira";
+			nomedia="terca-Feira";
+			gendia="uma";
 		}
 		else if (data2.get(Calendar.DAY_OF_WEEK)==4){
-			nomedia="uma quarta-Feira";
+			nomedia="quarta-Feira";
+			gendia="uma";
 		}
 		else if (data2.get(Calendar.DAY_OF_WEEK)==5){
-			nomedia="uma quinta-Feira";
+			nomedia="quinta-Feira";
+			gendia="uma";
 		}
 		else if (data2.get(Calendar.DAY_OF_WEEK)==6){
-			nomedia="uma sexta-Feira";
+			nomedia="sexta-Feira";
+			gendia="uma";
 		}
 		//if (data2.get(Calendar.DAY_OF_WEEK)==7){
 		else {
-			nomedia="um sabado";
+			nomedia="sabado";
+			gendia="um";
 		}
 		System.out.println("\nDia da semana formatado: "+nomedia);
 		
@@ -131,15 +140,15 @@ public class BasicFeaturesJava {
 
 		if (data2.get(Calendar.HOUR_OF_DAY)>5 && data2.get(Calendar.HOUR_OF_DAY) < 12){
 		//System.out.println("\n\nData completa formatada: ");
-		System.out.println("Bom dia, estamos em "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
+		System.out.println("Bom dia, estamos em "+gendia+" "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
 		//System.out.println(data2);
 		//System.out.println(data2.get(Calendar.HOUR_OF_DAY));
 		}
 		else if (data2.get(Calendar.HOUR_OF_DAY)>=12 && data2.get(Calendar.HOUR_OF_DAY)< 18){
-		System.out.println("Boa tarde, estamos em "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
+		System.out.println("Boa tarde, estamos em "+gendia+" "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
 		}
 		else {
-		System.out.println("Boa noite, estamos em "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
+		System.out.println("Boa noite, estamos em "+gendia+" "+nomedia+", "+data2.get(Calendar.DAY_OF_MONTH)+" de "+mes+" de "+data2.get(Calendar.YEAR)+".\n\n");
 		}
 		//Fim testes com data
 		
