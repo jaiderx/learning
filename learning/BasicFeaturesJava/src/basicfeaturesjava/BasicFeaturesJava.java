@@ -1,21 +1,31 @@
 /*
+ * BasicFeaturesJava
+ *
+ * Versão 1.0
+ *
+ * 23/03/2017
+ *
+ * GNU Public license
+ *
  * Início dos estudos de programação  em Java
  * Jaider Xavier Jr.
-
- * 
- * Histórico de alterações (inserido em 23/03/2017)
- * Inseridas variáveis para melhor legibilidade no trecho de data
- * Trabalhando com package, compilando e executando
- * Inserida a variável gendia, para dar gênero ao dia da semana
- * Melhorado aninhamento if/else - Jaider
+ *  
+ * Histórico de alterações
+ * 23/03/2017 - Alterado arquivo fonte com convenção de códigos Java
+ * 23/03/2017 - Inseridas variáveis para melhor legibilidade no trecho de data
+ * 23/03/2017 - Trabalhando com package, compilando e executando
+ * 23/03/2017 - Inserida a variável gendia, para dar gênero ao dia da semana
+ * 23/03/2017 - Melhorado aninhamento if/else - Jaider
  *
  */
+ 	
 package basicfeaturesjava;
+
 import java.util.Calendar;
 
 public class BasicFeaturesJava {
 		/*Sequencia de exercícios trabalhando
-		** com variaveis e comentários no código.
+		* com variaveis e comentários no código.
 		*/
 	public static void main(String[] args){
     
@@ -34,7 +44,7 @@ public class BasicFeaturesJava {
 		System.out.println("\n\n"+um+", "+dois+", "+tres+", "+quatro+", "+cinco+", "+seis+", "+sete+", "+oito+", "+nove);
 
 		//-------------Trabalhando com data / classe Calendar
-		Calendar data2 = Calendar.getInstance();
+		final Calendar data2 = Calendar.getInstance();
 		
 		//Usando Método getTime
 		System.out.println("\nData usando Metodo getTime na classe Calendar:");
@@ -42,7 +52,7 @@ public class BasicFeaturesJava {
 
 /*		
 		//Exibindo Método get(Calendar.objeto)
-		
+	*	
 		System.out.println("\n\nData usando metodo get(Calendar.objeto)");
 		System.out.println("Ano: "+data2.get(Calendar.YEAR));
 		System.out.println("Mes: "+data2.get(Calendar.MONTH));
@@ -53,31 +63,33 @@ public class BasicFeaturesJava {
 		//Formatando dias da semana:
 		String nomedia ="";
 		String gendia ="";
-		if (data2.get(Calendar.DAY_OF_WEEK)==1){
+		int diasmn=data2.get(Calendar.DAY_OF_WEEK);
+
+		if (diasmn == 1){
 			nomedia="domingo";
 			gendia="um";
 		}
-		else if (data2.get(Calendar.DAY_OF_WEEK)==2){
+		else if (diasmn == 2){
 			nomedia="segunda-Feira";
 			gendia="uma";
 		}
-		else if (data2.get(Calendar.DAY_OF_WEEK)==3){
+		else if (diasmn == 3){
 			nomedia="terca-Feira";
 			gendia="uma";
 		}
-		else if (data2.get(Calendar.DAY_OF_WEEK)==4){
+		else if (diasmn == 4){
 			nomedia="quarta-Feira";
 			gendia="uma";
 		}
-		else if (data2.get(Calendar.DAY_OF_WEEK)==5){
+		else if (diasmn == 5){
 			nomedia="quinta-Feira";
 			gendia="uma";
 		}
-		else if (data2.get(Calendar.DAY_OF_WEEK)==6){
+		else if (diasmn == 6){
 			nomedia="sexta-Feira";
 			gendia="uma";
 		}
-		//if (data2.get(Calendar.DAY_OF_WEEK)==7){
+		
 		else {
 			nomedia="sabado";
 			gendia="um";
@@ -85,43 +97,44 @@ public class BasicFeaturesJava {
 		System.out.println("\nDia da semana formatado: "+nomedia);
 		
 		//Formatando meses:
-		String mes="";
-		if (data2.get(Calendar.MONTH)==1){
-			mes="Janeiro";
+		String mesnome="";
+		int mes=data2.get(Calendar.MONTH);
+
+		if (mes == 1){
+			mesnome="Janeiro";
 		}
-		else if (data2.get(Calendar.MONTH)==2){
-			mes="Fevereiro";
+		else if (mes == 2){
+			mesnome="Fevereiro";
 		}
-		else if (data2.get(Calendar.MONTH)==3){
-			mes="Marco";
+		else if (mes == 3){
+			mesnome="Marco";
 		}
-		else if (data2.get(Calendar.MONTH)==4){
-			mes="Abril";
+		else if (mes == 4){
+			mesnome="Abril";
 		}
-		else if (data2.get(Calendar.MONTH)==5){
-			mes="Maio";
+		else if (mes == 5){
+			mesnome="Maio";
 		}
-		else if (data2.get(Calendar.MONTH)==6){
-			mes="Junho";
+		else if (mes == 6){
+			mesnome="Junho";
 		}
-		else if (data2.get(Calendar.MONTH)==7){
-			mes="Julho";
+		else if (mes == 7){
+			mesnome="Julho";
 		}
-		else if (data2.get(Calendar.MONTH)==8){
-			mes="Agosto";
+		else if (mes == 8){
+			mesnome="Agosto";
 		}
-		else if (data2.get(Calendar.MONTH)==9){
-			mes="Setembro";
+		else if (mes == 9){
+			mesnome="Setembro";
 		}
-		else if (data2.get(Calendar.MONTH)==10){
-			mes="Outubro";
+		else if (mes == 10){
+			mesnome="Outubro";
 		}
-		else if (data2.get(Calendar.MONTH)==11){
-			mes="Novembro";
+		else if (mes == 11){
+			mesnome="Novembro";
 		}
-		//if (data2.get(Calendar.MONTH)==12){
 		else {
-			mes="Dezembro";
+			mesnome="Dezembro";
 		}
 
 		//Exibindo dados formatados do calendário:
@@ -142,14 +155,15 @@ public class BasicFeaturesJava {
 		}
 
 		System.out.println("\n\nData completa formatada: ");
-		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mes+" de "+ano+".\n\n");
-		
+		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n\n");
+		System.out.println("Data simples: "+dia+"/"+mes+"/"+ano+".");
+
 		//Fim testes com data
 		
 		//Início dos testes com números
 		double pi=3.14;
 		double x=5*10;
-		System.out.println("pi: "+pi+" e X: "+(int)x);
+		System.out.println("\n\npi: "+pi+" e X: "+(int)x);
                
     }
 }
