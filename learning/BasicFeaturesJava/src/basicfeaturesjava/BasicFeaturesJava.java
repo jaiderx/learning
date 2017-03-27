@@ -22,6 +22,8 @@
 package basicfeaturesjava;
 
 import java.util.Calendar;
+//import java.util.*; //Date;
+//import java.lang.*; //Object;
 
 public class BasicFeaturesJava {
 		/*Sequencia de exercícios trabalhando
@@ -100,37 +102,37 @@ public class BasicFeaturesJava {
 		String mesnome="";
 		int mes=data2.get(Calendar.MONTH);
 
-		if (mes == 1){
+		if (mes == 0){
 			mesnome="Janeiro";
 		}
-		else if (mes == 2){
+		else if (mes == 1){
 			mesnome="Fevereiro";
 		}
-		else if (mes == 3){
-			mesnome="Marco";
+		else if (mes == 2){
+			mesnome="Março";
 		}
-		else if (mes == 4){
+		else if (mes == 3){
 			mesnome="Abril";
 		}
-		else if (mes == 5){
+		else if (mes == 4){
 			mesnome="Maio";
 		}
-		else if (mes == 6){
+		else if (mes == 5){
 			mesnome="Junho";
 		}
-		else if (mes == 7){
+		else if (mes == 6){
 			mesnome="Julho";
 		}
-		else if (mes == 8){
+		else if (mes == 7){
 			mesnome="Agosto";
 		}
-		else if (mes == 9){
+		else if (mes == 8){
 			mesnome="Setembro";
 		}
-		else if (mes == 10){
+		else if (mes == 9){
 			mesnome="Outubro";
 		}
-		else if (mes == 11){
+		else if (mes == 10){
 			mesnome="Novembro";
 		}
 		else {
@@ -143,7 +145,11 @@ public class BasicFeaturesJava {
 		int dia = data2.get(Calendar.DAY_OF_MONTH);
 		int horaint = data2.get(Calendar.HOUR_OF_DAY);
 		int ano = data2.get(Calendar.YEAR);
-
+		
+//		final DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+//		final Calendar cal = Calendar.getInstance();
+//		System.out.println(df.format(cal.getTime()));
+		
 		if (horaint > 5 && horaint < 12){	
 		saudacao="Bom dia";
 		}
@@ -156,14 +162,28 @@ public class BasicFeaturesJava {
 
 		System.out.println("\n\nData completa formatada: ");
 		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n\n");
-		System.out.println("Data simples: "+dia+"/"+mes+"/"+ano+".");
+//		System.out.println("Data simples: "+df.format(data2.getTime()));
+//		System.out.println(data2.getTime());
+//		System.out.println("Data simples: "+dia+"/"+mes+"/"+ano+".");
+//		System.out.println(mes);
+//		System.out.println(data2.get(Calendar.MONTH));
 
 		//Fim testes com data
 		
+
 		//Início dos testes com números
-		double pi=3.14;
+/*		double pi=3.14;
 		double x=5*10;
 		System.out.println("\n\npi: "+pi+" e X: "+(int)x);
-               
+  
+*/
+
+
+	if (saudacao == "Bom dia" || saudacao == "Boa tarde"){
+		System.out.println("é de dia");
+	}
+	else {
+		System.out.println("É de noite");
+	}
     }
 }
