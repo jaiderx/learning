@@ -162,12 +162,23 @@ public class BasicFeaturesJava {
 		aberto=false;
 	}
 
-	//Testes usando negação
+	//Teste usando negação
 	if (!aberto){
 	System.out.println ("Estabelecimento Fechado!");
 	}
 
 
+	//Teste com while
+	int a =0;
+	while (a <= 20){
+		if (a % 2 == 0){
+		System.out.println(a+" - par");
+		}
+		else {
+			System.out.println(a+" - ímpar");
+		}
+		a++;
+	}
 
     }
 }
