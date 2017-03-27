@@ -51,16 +51,7 @@ public class BasicFeaturesJava {
 		//Usando Método getTime
 		System.out.println("\nData usando Metodo getTime na classe Calendar:");
 		System.out.println(data2.getTime());
-
-/*		
-		//Exibindo Método get(Calendar.objeto)
-	*	
-		System.out.println("\n\nData usando metodo get(Calendar.objeto)");
-		System.out.println("Ano: "+data2.get(Calendar.YEAR));
-		System.out.println("Mes: "+data2.get(Calendar.MONTH));
-		System.out.println("Dia: "+data2.get(Calendar.DAY_OF_MONTH));
-		System.out.println("Dia da Semana: "+data2.get(Calendar.DAY_OF_WEEK));
-*/		
+	
 		
 		//Formatando dias da semana:
 		String nomedia ="";
@@ -146,10 +137,7 @@ public class BasicFeaturesJava {
 		int horaint = data2.get(Calendar.HOUR_OF_DAY);
 		int ano = data2.get(Calendar.YEAR);
 		
-//		final DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-//		final Calendar cal = Calendar.getInstance();
-//		System.out.println(df.format(cal.getTime()));
-		
+	
 		if (horaint > 5 && horaint < 12){	
 		saudacao="Bom dia";
 		}
@@ -162,23 +150,8 @@ public class BasicFeaturesJava {
 
 		System.out.println("\n\nData completa formatada: ");
 		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n\n");
-//		System.out.println("Data simples: "+df.format(data2.getTime()));
-//		System.out.println(data2.getTime());
-//		System.out.println("Data simples: "+dia+"/"+mes+"/"+ano+".");
-//		System.out.println(mes);
-//		System.out.println(data2.get(Calendar.MONTH));
 
-		//Fim testes com data
-		
-
-		//Início dos testes com números
-/*		double pi=3.14;
-		double x=5*10;
-		System.out.println("\n\npi: "+pi+" e X: "+(int)x);
-  
-*/
-
-
+	//Testes usando OR no if
 	if (saudacao == "Bom dia" || saudacao == "Boa tarde"){
 		System.out.println("é de dia");
 	}
