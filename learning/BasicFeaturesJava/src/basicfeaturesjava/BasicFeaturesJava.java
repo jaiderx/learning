@@ -167,18 +167,105 @@ public class BasicFeaturesJava {
 	System.out.println ("Estabelecimento Fechado!");
 	}
 
-
+/*
 	//Teste com while
-	int a =0;
-	while (a <= 20){
+	int a = 1;
+	int contador=20;
+	int b = 1;
+	String parimpar = "";
+	String primo="primo";
+	
+	while (a <= contador){
+		b=1;
+		//Testa se é par ou ímpar
 		if (a % 2 == 0){
-		System.out.println(a+" - par");
+		parimpar = " - par - ";
+		primo="";
 		}
 		else {
-			System.out.println(a+" - ímpar");
+			parimpar=" - ímpar - ";
+
 		}
+		//Testa se é primo
+		if (a % b == 0){
+			b++;			
+		}
+		else if (((b == 2) && !(contador %2==0)) || (contador == 1)){
+			primo="primo";
+		}
+		
+			
+		System.out.println(a+parimpar+primo);
 		a++;
 	}
 
-    }
+
+	*/
+
+
+
+/*
+1/1 = 1 resto 0
+9/1 = 9 resto 0
+9/2 = 4 resto 1
+9/3 = 3 resto 0
+9/4
+9/5
+9/6
+9/7
+9/8
+9/9
+15/1 = 15 resto 0
+15/2 = 7  resto 1
+15/3 = 5  resto 0
+21/1 = 21 resto 0
+21/2 = 10 resto 1
+21/3 = 
+25/1
+25/2
+25/3
+25/4 =
+25/5 = 5  resto 0
+
+*/
+
+	int x=30;
+	int guardai=0;
+	for (int i=1; i <= x; i++){
+	if (i % 2 == 0) {
+		guardai=i;
+		System.out.print(guardai+" - ");
+		if (i >= 4){
+			for (int j=i; j>=1; j--){
+				if (!(j % 2 ==0)){
+				System.out.print(j+" ");
+
+				//fim if !(j
+				}
+
+			//fim for j==i
+			}
+		
+
+		//fecha if >=4
+		}
+System.out.println("");
+	//fecha if i % 2
+	}
+
+//fecha primeiro for
+	}
+
+	
+	
+
+
+
+	
+
+
+
+//fecha main
+	}
+//fecha classe
 }
