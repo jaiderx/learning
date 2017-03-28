@@ -152,11 +152,22 @@ public class BasicFeaturesJava {
 		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n\n");
 
 	//Testes usando OR no if
+	boolean aberto = true;
 	if (saudacao == "Bom dia" || saudacao == "Boa tarde"){
 		System.out.println("é de dia");
+
 	}
 	else {
 		System.out.println("É de noite");
+		aberto=false;
 	}
+
+	//Testes usando negação
+	if (!aberto){
+	System.out.println ("Estabelecimento Fechado!");
+	}
+
+
+
     }
 }
