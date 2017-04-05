@@ -167,44 +167,17 @@ public class BasicFeaturesJava {
 	System.out.println ("Estabelecimento Fechado!");
 	}
 
-
-
-
-
-/*
-1/1 = 1 resto 0
-9/1 = 9 resto 0
-9/2 = 4 resto 1
-9/3 = 3 resto 0
-9/4
-9/5
-9/6
-9/7
-9/8
-9/9
-15/1 = 15 resto 0
-15/2 = 7  resto 1
-15/3 = 5  resto 0
-21/1 = 21 resto 0
-21/2 = 10 resto 1
-21/3 = 
-25/1
-25/2
-25/3
-25/4 =
-25/5 = 5  resto 0
-
-*/
-
+		
+		//Testes com primos
 	boolean primo;
-	int num=50000;
+	int num=500000;
 	int j=2;
-while(j <= num){
+	while(j <= num){
 	int i=2;
 	primo=true;
 	while(i < j) {
 	//	if(j % i == 0){
-		if ( (j % i == 0) && !((int) ) ){
+		if ( (j % i == 0) && !( ((int)j/i)<i ) ){
 		primo=false;
 			break;
 		}
@@ -216,15 +189,6 @@ while(j <= num){
 	j++;
 }
 	
-	
-	
-	
-	
-
-
-
-	
-
 
 
 //fecha main
