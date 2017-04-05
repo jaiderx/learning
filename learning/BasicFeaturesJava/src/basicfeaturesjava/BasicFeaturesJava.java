@@ -189,8 +189,6 @@ public class BasicFeaturesJava {
 	quociente++;
 }
 	
-
-
 //fecha main
 	}
 //fecha classe
