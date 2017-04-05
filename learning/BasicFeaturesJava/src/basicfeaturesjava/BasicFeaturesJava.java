@@ -170,23 +170,23 @@ public class BasicFeaturesJava {
 		
 		//Testes com primos
 	boolean primo;
-	int num=500000;
-	int j=2;
-	while(j <= num){
-	int i=2;
+	int num=1000000, quociente=2, quocienteanterior=0, diferenca;
+	while(quociente <= num){
+	int divisor=2;
 	primo=true;
-	while(i < j) {
-	//	if(j % i == 0){
-		if ( (j % i == 0) && !( ((int)j/i)<i ) ){
+	while(divisor < quociente) {
+		if(quociente % divisor == 0){
 		primo=false;
 			break;
 		}
-		i++;
+		divisor++;
 	}
 		if (primo){
-			System.out.println(j);
+			diferenca=quociente-quocienteanterior;
+			System.out.println(quociente+" - "+quocienteanterior+" = "+diferenca);
+			quocienteanterior=quociente;			
 		}
-	j++;
+	quociente++;
 }
 	
 
