@@ -172,22 +172,22 @@ public class BasicFeaturesJava {
 	boolean primo;
 	int num=1000000, quociente=2, quocienteanterior=0, diferenca;
 	while(quociente <= num){
-	int divisor=2;
-	primo=true;
-	while(divisor < quociente) {
-		if(quociente % divisor == 0){
-		primo=false;
+		int divisor=2;
+		primo=true;
+		while(divisor < quociente) {
+			if(quociente % divisor == 0){
+			primo=false;
 			break;
+			}
+			divisor++;
 		}
-		divisor++;
-	}
 		if (primo){
 			diferenca=quociente-quocienteanterior;
 			System.out.println(quociente+" - "+quocienteanterior+" = "+diferenca);
 			quocienteanterior=quociente;			
 		}
-	quociente++;
-}
+		quociente++;
+	}
 	
 //fecha main
 	}
