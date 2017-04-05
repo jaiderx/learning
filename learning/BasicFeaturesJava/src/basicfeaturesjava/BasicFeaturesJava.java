@@ -167,40 +167,7 @@ public class BasicFeaturesJava {
 	System.out.println ("Estabelecimento Fechado!");
 	}
 
-/*
-	//Teste com while
-	int a = 1;
-	int contador=20;
-	int b = 1;
-	String parimpar = "";
-	String primo="primo";
-	
-	while (a <= contador){
-		b=1;
-		//Testa se é par ou ímpar
-		if (a % 2 == 0){
-		parimpar = " - par - ";
-		primo="";
-		}
-		else {
-			parimpar=" - ímpar - ";
 
-		}
-		//Testa se é primo
-		if (a % b == 0){
-			b++;			
-		}
-		else if (((b == 2) && !(contador %2==0)) || (contador == 1)){
-			primo="primo";
-		}
-		
-			
-		System.out.println(a+parimpar+primo);
-		a++;
-	}
-
-
-	*/
 
 
 
@@ -229,33 +196,28 @@ public class BasicFeaturesJava {
 
 */
 
-	int x=30;
-	int guardai=0;
-	for (int i=1; i <= x; i++){
-	if (i % 2 == 0) {
-		guardai=i;
-		System.out.print(guardai+" - ");
-		if (i >= 4){
-			for (int j=i; j>=1; j--){
-				if (!(j % 2 ==0)){
-				System.out.print(j+" ");
-
-				//fim if !(j
-				}
-
-			//fim for j==i
-			}
-		
-
-		//fecha if >=4
+	boolean primo;
+	int num=50000;
+	int j=2;
+while(j <= num){
+	int i=2;
+	primo=true;
+	while(i < j) {
+	//	if(j % i == 0){
+		if ( (j % i == 0) && !((int) ) ){
+		primo=false;
+			break;
 		}
-System.out.println("");
-	//fecha if i % 2
+		i++;
 	}
-
-//fecha primeiro for
-	}
-
+		if (primo){
+			System.out.println(j);
+		}
+	j++;
+}
+	
+	
+	
 	
 	
 
