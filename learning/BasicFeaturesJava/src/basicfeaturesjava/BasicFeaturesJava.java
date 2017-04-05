@@ -170,9 +170,9 @@ public class BasicFeaturesJava {
 		
 		//Testes com primos
 	boolean primo;
-	int num=1000000, quociente=2, quocienteanterior=0, diferenca;
+	long num=10 /*9223372036854775807L*/, quociente=2, quocienteanterior=0, diferenca;
 	while(quociente <= num){
-		int divisor=2;
+		long divisor=2;
 		primo=true;
 		while(divisor < quociente) {
 			if(quociente % divisor == 0){
@@ -188,6 +188,15 @@ public class BasicFeaturesJava {
 		}
 		quociente++;
 	}
+	//FIM PRIMOS
+	
+	
+//TESTES COM INCREMENTO
+int a=53, b=5, c=2;
+System.out.println("\nA="+a+", B="+b+", C="+c+"\nApós incremento:");
+b=b+a++;
+c=c+(++a);	
+System.out.println("A="+a+"\nB="+b+"\nC="+c);
 	
 //fecha main
 	}
