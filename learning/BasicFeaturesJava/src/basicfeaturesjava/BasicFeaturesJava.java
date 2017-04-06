@@ -170,7 +170,7 @@ public class BasicFeaturesJava {
 		
 	//Teste contando números primos
 	boolean primo;
-	long num=10/*9223372036854775807L*/, quociente=2, quocienteant=0, diferenca;
+	long num=10/*9223372036854775807L*/, quociente=2, quocienteant=0, diferenca=0;
 	while(quociente <= num){
 		long divisor=2;
 		primo=true;
@@ -197,6 +197,21 @@ System.out.println("\nA="+a+", B="+b+", C="+c+"\nApós incremento:");
 b=b+a++;
 c=c+(++a);	
 System.out.println("A="+a+"\nB="+b+"\nC="+c);
+	
+	
+	
+	//Já foi utilizado o break, agora o continue
+System.out.println("\n\nUsando o comando continue; para rodar o laço sem executar abaixo:");
+	for (b=0; b<5; b++){
+			if (b > 2 && b < 4){
+				continue;
+				}
+			System.out.print("\n"+b+" ");
+		}
+System.out.println("\nNo caso acima, foi dado o continue caso o número fosse 3,");
+System.out.println("então não executou a exibição deste número que estava abaixo."); 
+
+
 	
 //fecha main
 	}
