@@ -168,9 +168,9 @@ public class BasicFeaturesJava {
 	}
 
 		
-		//Testes com primos
+	//Teste contando números primos
 	boolean primo;
-	long num=10 /*9223372036854775807L*/, quociente=2, quocienteanterior=0, diferenca;
+	long num=10/*9223372036854775807L*/, quociente=2, quocienteant=0, diferenca;
 	while(quociente <= num){
 		long divisor=2;
 		primo=true;
@@ -182,9 +182,9 @@ public class BasicFeaturesJava {
 			divisor++;
 		}
 		if (primo){
-			diferenca=quociente-quocienteanterior;
-			System.out.println(quociente+" - "+quocienteanterior+" = "+diferenca);
-			quocienteanterior=quociente;			
+			diferenca=quociente-quocienteant;
+			System.out.println(quociente+" - "+quocienteant+" = "+diferenca);
+			quocienteant=quociente;			
 		}
 		quociente++;
 	}
