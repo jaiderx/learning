@@ -212,6 +212,13 @@ System.out.println("\nNo caso acima, foi dado o continue caso o número fosse 3,
 System.out.println("então não executou a exibição deste número que estava abaixo."); 
 
 
+//Usando o do-while
+
+do{
+	System.out.println(c);
+	c++;
+} while (c<100
+
 	
 //fecha main
 	}
