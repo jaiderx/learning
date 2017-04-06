@@ -12,3 +12,4 @@
 # O arquivo que mais tenho trabalhado é o learning/learning/BasicFeaturesJava/src/basicfeaturesjava/BasicFeaturesJava.java
 #
 # Outro interessante que iniciantes podem usar para brincar é a classe de data
+# learning/learning/Datacompleta.java
