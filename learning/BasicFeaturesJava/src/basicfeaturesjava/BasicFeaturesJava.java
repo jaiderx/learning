@@ -169,6 +169,7 @@ public class BasicFeaturesJava {
 
 		
 	//Teste contando números primos
+	System.out.println("\nNúmeros primos com cálculo da diferença para o anterior:");
 	boolean primo;
 	long num=10/*9223372036854775807L*/, quociente=2, quocienteant=0, diferenca=0;
 	while(quociente <= num){
@@ -212,13 +213,32 @@ System.out.println("\nNo caso acima, foi dado o continue caso o número fosse 3,
 System.out.println("então não executou a exibição deste número que estava abaixo."); 
 
 
-//Usando o do-while
-
+//Usando o do-while e labeled loop
+//Laço com alias para que o break pare no escopo anterior
+teste:
 do{
-	System.out.println(c);
 	c++;
-} while (c<100
+	int w=2;
 
+		if (c==60){
+		break teste;
+	}
+	System.out.println(c);
+	++c;
+} while (c<80);
+System.out.println(c);
+
+
+//DIVISÃO POR ZERO E POR 0,0:
+
+//COMPILA, MAS DÁ ERRO DE ARITHMETIC EXCEPTION NA EXECUÇÃO
+System.out.println(2/0);	
+//COMPILA, EXECUTA E DÁ "INFINITY" COMO RESULTADO
+System.out.println(2/0.0);	
+	
+//usando labeled loop (laços com aliás)
+
+	
 	
 //fecha main
 	}
