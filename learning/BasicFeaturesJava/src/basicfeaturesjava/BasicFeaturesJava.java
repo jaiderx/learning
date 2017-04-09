@@ -9,6 +9,7 @@
  *
  * Início dos estudos de programação  em Java
  * Jaider Xavier Jr.
+ * Um oferecimento à Luciana Moreira e ao amor contido e cada vez mais crescente em mim por ela.
  *  
  * Histórico de alterações
  * 23/03/2017 - Alterado arquivo fonte com convenção de códigos Java
