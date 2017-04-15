@@ -97,31 +97,18 @@ public class BasicFeaturesJava {
 
 		switch(mes){
 		case 1: mesnome="Janeiro";
-		break;
 		case 2:	mesnome="Fevereiro";
-		break;
 		case 3: mesnome="Março";
-		break;
 		case 4: mesnome="Abril";
-		break;
 		case 5: mesnome="Maio";
-		break;
 		case 6: mesnome="Junho";
-		break;
 		case 7: mesnome="Julho";
-		break;
 		case 8: mesnome="Agosto";
-		break;
 		case 9: mesnome="Setembro";
-		break;
 		case 10: mesnome="Outubro";
-		break;
 		case 11: mesnome="Novembro";
-		break;
 		case 12: mesnome="Dezembro";
-		break;
 		default: mesnome="Mês inválido";
-		break;
 		}
 		//Exibindo dados formatados do calendário:
 		
