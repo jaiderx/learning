@@ -90,47 +90,39 @@ public class BasicFeaturesJava {
 		}
 		System.out.println("\nDia da semana formatado: "+nomedia);
 		
-		//Formatando meses:
+		//Formatando meses usando Switch/Case:
 		String mesnome="";
+
 		int mes=data2.get(Calendar.MONTH);
 
-		if (mes == 0){
-			mesnome="Janeiro";
+		switch(mes){
+		case 1: mesnome="Janeiro";
+		break;
+		case 2:	mesnome="Fevereiro";
+		break;
+		case 3: mesnome="Março";
+		break;
+		case 4: mesnome="Abril";
+		break;
+		case 5: mesnome="Maio";
+		break;
+		case 6: mesnome="Junho";
+		break;
+		case 7: mesnome="Julho";
+		break;
+		case 8: mesnome="Agosto";
+		break;
+		case 9: mesnome="Setembro";
+		break;
+		case 10: mesnome="Outubro";
+		break;
+		case 11: mesnome="Novembro";
+		break;
+		case 12: mesnome="Dezembro";
+		break;
+		default: mesnome="Mês inválido";
+		break;
 		}
-		else if (mes == 1){
-			mesnome="Fevereiro";
-		}
-		else if (mes == 2){
-			mesnome="Março";
-		}
-		else if (mes == 3){
-			mesnome="Abril";
-		}
-		else if (mes == 4){
-			mesnome="Maio";
-		}
-		else if (mes == 5){
-			mesnome="Junho";
-		}
-		else if (mes == 6){
-			mesnome="Julho";
-		}
-		else if (mes == 7){
-			mesnome="Agosto";
-		}
-		else if (mes == 8){
-			mesnome="Setembro";
-		}
-		else if (mes == 9){
-			mesnome="Outubro";
-		}
-		else if (mes == 10){
-			mesnome="Novembro";
-		}
-		else {
-			mesnome="Dezembro";
-		}
-
 		//Exibindo dados formatados do calendário:
 		
 		String saudacao="";
@@ -220,7 +212,6 @@ teste:
 do{
 	c++;
 	int w=2;
-
 		if (c==60){
 		break teste;
 	}
@@ -232,14 +223,14 @@ System.out.println(c);
 
 //DIVISÃO POR ZERO E POR 0,0:
 
-//COMPILA, MAS DÁ ERRO DE ARITHMETIC EXCEPTION NA EXECUÇÃO
-System.out.println(2/0);	
-//COMPILA, EXECUTA E DÁ "INFINITY" COMO RESULTADO
-System.out.println(2/0.0);	
-	
-//usando labeled loop (laços com aliás)
+//COMPILA, MAS DA ERRO DE ARITHMETIC EXCEPTION DIVISAO POR ZERO NA EXECUÇÃO
+//System.out.println(2/0);	
+//Apos o erro na execução, nada mais em diante é executado. Linha acima comentada em razao disso.
 
+//COMPILA, EXECUTA E DA "INFINITY" COMO RESULTADO
+System.out.println("\n"+2/0.0);	
 	
+
 	
 //fecha main
 	}
