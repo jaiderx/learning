@@ -88,7 +88,7 @@ public class BasicFeaturesJava {
 			gendia="um";
 			break;
 			default: nomedia="Dia inválido";
-					 gendia:" - ";
+					 gendia=" - ";
 		}
 		System.out.println("\nDia da semana formatado: "+nomedia);
 		
@@ -97,7 +97,7 @@ public class BasicFeaturesJava {
 
 		int mes=data2.get(Calendar.MONTH);
 
-		switch(mes){
+		switch(++mes){
 		case 1: mesnome="Janeiro";
 		break;
 		case 2:	mesnome="Fevereiro";
@@ -162,10 +162,10 @@ public class BasicFeaturesJava {
 	}
 
 		
-	//Teste contando números primos
+	//Teste contando números primos /*9223372036854775807L*/
 	System.out.println("\nNúmeros primos com cálculo da diferença para o anterior:");
 	boolean primo;
-	long num=10/*9223372036854775807L*/, quociente=2, quocienteant=0, diferenca=0;
+	long num=10, quociente=2, quocienteant=0, diferenca=0;
 	while(quociente <= num){
 		long divisor=2;
 		primo=true;
@@ -206,7 +206,6 @@ System.out.println("\n\nUsando o comando continue; para rodar o laço sem execut
 System.out.println("\nNo caso acima, foi dado o continue caso o número fosse 3,");
 System.out.println("então não executou a exibição deste número que estava abaixo."); 
 
-
 //Usando o do-while e labeled loop
 //Laço com alias para que o break pare no escopo anterior
 teste:
@@ -219,7 +218,7 @@ do{
 	System.out.println(c);
 	++c;
 } while (c<80);
-System.out.println(c);
+System.out.println(c);//60
 
 
 //DIVISÃO POR ZERO E POR 0,0:
@@ -229,9 +228,49 @@ System.out.println(c);
 //Apos o erro na execução, nada mais em diante é executado. Linha acima comentada em razao disso.
 
 //COMPILA, EXECUTA E DA "INFINITY" COMO RESULTADO
-System.out.println("\n"+2/0.0);	
+//System.out.println("\n"+2/0.0);	
 	
+	
+	//exercícios de fixação
+	//imprimir números de 150 a 300
+	System.out.println("\n\nExibe números de 150 a 300");
+	for (int i=150; i<=300; i++){
+		System.out.print(i+" ");
+		if (i % 10 == 0){
+			System.out.println("\n");
+		}
+	}
+	
+	
+	//imprime a soma de um até mil (fibonacci)
+	System.out.println("\n\nExibe a soma de um até cem (fibonacci)");
+	int somai=0;
+	for (int i=1; i<=100; i++){
+		somai=somai+i;
+		System.out.print(somai+" ");
+	}
 
+	
+	//imprime múltiplos de 3 até 100	
+	System.out.println("\n\nExibe os múltiplos de 3 até 100");
+
+	for (int i=1; i<=100; i++){
+		if(i % 3 == 0){
+			System.out.print(i+" ");
+		}
+	}
+	
+	
+	//exibe os fatoriais
+	System.out.println("\nExibe o fatorial de 10");
+	long fat=1;
+	for (int i=1; i<=21; i++){
+		fat*=i;
+		System.out.println(fat);
+	}
+	
+	
+	
 	
 //fecha main
 	}
