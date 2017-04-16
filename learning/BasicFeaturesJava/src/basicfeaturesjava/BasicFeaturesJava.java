@@ -24,7 +24,6 @@ package basicfeaturesjava;
 
 import java.util.Calendar;
 //import java.util.*; //Date;
-//import java.lang.*; //Object;
 
 public class BasicFeaturesJava {
 		/*Sequencia de exercícios trabalhando
@@ -58,56 +57,71 @@ public class BasicFeaturesJava {
 		String nomedia ="";
 		String gendia ="";
 		int diasmn=data2.get(Calendar.DAY_OF_WEEK);
-
-		if (diasmn == 1){
+		
+		switch(diasmn){
+			case 1:
 			nomedia="domingo";
 			gendia="um";
-		}
-		else if (diasmn == 2){
+			break;
+			case 2:
 			nomedia="segunda-Feira";
 			gendia="uma";
-		}
-		else if (diasmn == 3){
+			break;
+			case 3:
 			nomedia="terca-Feira";
 			gendia="uma";
-		}
-		else if (diasmn == 4){
+			break;
+			case 4:
 			nomedia="quarta-Feira";
 			gendia="uma";
-		}
-		else if (diasmn == 5){
+			break;
+			case 5:
 			nomedia="quinta-Feira";
 			gendia="uma";
-		}
-		else if (diasmn == 6){
+			break;
+			case 6:
 			nomedia="sexta-Feira";
 			gendia="uma";
-		}
-		
-		else {
+			break;
+			case 7:
 			nomedia="sabado";
 			gendia="um";
+			break;
+			default: nomedia="Dia inválido";
+					 gendia:" - ";
 		}
 		System.out.println("\nDia da semana formatado: "+nomedia);
 		
-		//Formatando meses usando Switch/Case:
+		//Formatando meses:
 		String mesnome="";
 
 		int mes=data2.get(Calendar.MONTH);
 
 		switch(mes){
 		case 1: mesnome="Janeiro";
+		break;
 		case 2:	mesnome="Fevereiro";
+		break;
 		case 3: mesnome="Março";
+		break;
 		case 4: mesnome="Abril";
+		break;
 		case 5: mesnome="Maio";
+		break;
 		case 6: mesnome="Junho";
+		break;
 		case 7: mesnome="Julho";
+		break;
 		case 8: mesnome="Agosto";
+		break;
 		case 9: mesnome="Setembro";
+		break;
 		case 10: mesnome="Outubro";
+		break;
 		case 11: mesnome="Novembro";
+		break;
 		case 12: mesnome="Dezembro";
+		break;
 		default: mesnome="Mês inválido";
 		}
 		//Exibindo dados formatados do calendário:
