@@ -242,8 +242,9 @@ System.out.println(c);//60
 	}
 	
 	
-	//imprime a soma de um até mil (fibonacci)
-	System.out.println("\n\nExibe a soma de um até cem (fibonacci)");
+	
+	System.out.println("\n\nExibe a soma de um até cem (fibonacci)\n");  //imprime a soma de um até mil (fibonacci)
+
 	int somai=0;
 	for (int i=1; i<=100; i++){
 		somai=somai+i;
@@ -251,8 +252,8 @@ System.out.println(c);//60
 	}
 
 	
-	//imprime múltiplos de 3 até 100	
-	System.out.println("\n\nExibe os múltiplos de 3 até 100\n");
+		
+	System.out.println("\n\n\nExibe os múltiplos de 3 até 100\n");  //imprime múltiplos de 3 até 100
 
 	for (int i=1; i<=100; i++){
 		if(i % 3 == 0){
@@ -261,20 +262,18 @@ System.out.println(c);//60
 	}
 	
 	
-	//exibe os fatoriais
-	System.out.println("\n\nExibe o fatorial de 20\n\n");
+
+	System.out.println("\n\n\nExibe o fatorial de 5\n");	//exibe os fatoriais de forma fo-da
+	
 	long fat=1;
 	String mult="";
-	for (int i=20; i>=1; i--){
-		fat*=i;
-		if (i==1){
-			mult+=i;
-			continue;
+	for (int i=5; i>1; i--){
+		fat *=i;
+		mult +=i+" x ";
 		}
-		mult+=i+" x ";
-	}
+	System.out.print(mult+"1 = "+fat);
 	
-		System.out.print(mult+" = "+fat+"\n");
+	
 	
 	
 	
