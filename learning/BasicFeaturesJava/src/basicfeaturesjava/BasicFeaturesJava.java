@@ -131,7 +131,6 @@ public class BasicFeaturesJava {
 		int horaint = data2.get(Calendar.HOUR_OF_DAY);
 		int ano = data2.get(Calendar.YEAR);
 		
-	
 		if (horaint > 5 && horaint < 12){	
 		saudacao="Bom dia";
 		}
@@ -141,7 +140,6 @@ public class BasicFeaturesJava {
 		else {
 		saudacao="Boa noite";
 		}
-
 		System.out.println("\n\nData completa formatada: ");
 		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n\n");
 
@@ -194,18 +192,6 @@ c=c+(++a);
 System.out.println("A="+a+"\nB="+b+"\nC="+c);
 	
 	
-	
-	//Já foi utilizado o break, agora o continue
-System.out.println("\n\nUsando o comando continue; para rodar o laço sem executar abaixo:");
-	for (b=0; b<5; b++){
-			if (b > 2 && b < 4){
-				continue;
-				}
-			System.out.print("\n"+b+" ");
-		}
-System.out.println("\nNo caso acima, foi dado o continue caso o número fosse 3,");
-System.out.println("então não executou a exibição deste número que estava abaixo."); 
-
 //Usando o do-while e labeled loop
 //Laço com alias para que o break pare no escopo anterior
 teste:
@@ -227,23 +213,25 @@ System.out.println(c);//60
 //System.out.println(2/0);	
 //Apos o erro na execução, nada mais em diante é executado. Linha acima comentada em razao disso.
 
-//COMPILA, EXECUTA E DA "INFINITY" COMO RESULTADO
+//COMPILA, EXECUTA, MAS DA "INFINITY" COMO RESULTADO
 //System.out.println("\n"+2/0.0);	
 	
+
 	
-	//exercícios de fixação
+//exercícios de fixação
+
 	//imprimir números de 150 a 300
 	System.out.println("\n\nExibe números de 150 a 300");
 	for (int i=150; i<=300; i++){
 		System.out.print(i+" ");
 		if (i % 10 == 0){
-			System.out.println("\n");
+			System.out.print("\n");
 		}
 	}
 	
 	
 	
-	System.out.println("\n\nExibe a soma de um até cem (fibonacci)\n");  //imprime a soma de um até mil (fibonacci)
+	System.out.println("\n\nExibe a soma de um até cem (Fibonacci)\n");  //imprime a soma de um até mil (Fibonacci)
 
 	int somai=0;
 	for (int i=1; i<=100; i++){
@@ -261,7 +249,6 @@ System.out.println(c);//60
 		}
 	}
 	
-	
 
 	System.out.println("\n\n\nExibe o fatorial de 5\n");	//exibe os fatoriais de forma fo-da
 	
@@ -272,7 +259,6 @@ System.out.println(c);//60
 		mult +=i+" x ";
 		}
 	System.out.print(mult+"1 = "+fat);
-	
 	
 	
 	
