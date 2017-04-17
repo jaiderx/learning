@@ -252,7 +252,7 @@ System.out.println(c);//60
 
 	
 	//imprime múltiplos de 3 até 100	
-	System.out.println("\n\nExibe os múltiplos de 3 até 100");
+	System.out.println("\n\nExibe os múltiplos de 3 até 100\n");
 
 	for (int i=1; i<=100; i++){
 		if(i % 3 == 0){
@@ -262,13 +262,19 @@ System.out.println(c);//60
 	
 	
 	//exibe os fatoriais
-	System.out.println("\nExibe o fatorial de 10");
+	System.out.println("\n\nExibe o fatorial de 20\n\n");
 	long fat=1;
-	for (int i=1; i<=21; i++){
+	String mult="";
+	for (int i=20; i>=1; i--){
 		fat*=i;
-		System.out.println(fat);
+		if (i==1){
+			mult+=i;
+			continue;
+		}
+		mult+=i+" x ";
 	}
 	
+		System.out.print(mult+" = "+fat+"\n");
 	
 	
 	
