@@ -250,16 +250,18 @@ System.out.println(c);//60
 	}
 	
 
-	System.out.println("\n\n\nExibe o fatorial de 5\n");	//exibe os fatoriais de forma fo-da
+	System.out.println("\n\n\nExibe o fatoriais:\n");	//exibe os fatoriais de forma fo-da
 	
-	long fat=1;
-	String mult="";
-	for (int i=5; i>1; i--){
-		fat *=i;
-		mult +=i+" x ";
+	
+	for (int j=10; j > 1; j--){	
+		long fat=1;
+		String mult="";
+		for (int i=j; i>1; i--){
+			fat *=i;
+			mult +=i+" x ";
 		}
-	System.out.print(mult+"1 = "+fat);
-	
+		System.out.println(mult+"1 = "+fat);
+	}
 	
 	
 	
