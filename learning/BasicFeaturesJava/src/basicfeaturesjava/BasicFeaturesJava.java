@@ -9,7 +9,6 @@
  *
  * Início dos estudos de programação  em Java
  * Jaider Xavier Jr.
- * Um oferecimento à Luciana Moreira e ao amor contido e cada vez mais crescente em mim por ela.
  *  
  * Histórico de alterações
  * 23/03/2017 - Alterado arquivo fonte com convenção de códigos Java
@@ -30,6 +29,9 @@ public class BasicFeaturesJava {
 		* com variaveis e comentários no código.
 		*/
 	public static void main(String[] args){
+		
+		//definição  da variável com valor a ser usado nas próximas repetições
+	byte repet=10;
     
 		//pequenos cálculos
 		int um = 5%2; //usando percentual para extrair o mod
@@ -140,8 +142,8 @@ public class BasicFeaturesJava {
 		else {
 		saudacao="Boa noite";
 		}
-		System.out.println("\n\nData completa formatada: ");
-		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n\n");
+		System.out.println("\nData completa formatada: ");
+		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n");
 
 	//Testes usando OR no if
 	boolean aberto = true;
@@ -186,10 +188,10 @@ public class BasicFeaturesJava {
 	
 //TESTES COM INCREMENTO
 int a=53, b=5, c=2;
-System.out.println("\nA="+a+", B="+b+", C="+c+"\nApós incremento:");
+System.out.println("\nA="+a+", B="+b+", C="+c+"\n\nApós incremento:");
 b=b+a++;
 c=c+(++a);	
-System.out.println("A="+a+"\nB="+b+"\nC="+c);
+System.out.print("A="+a+"\nB="+b+"\nC="+c);
 	
 	
 //Usando o do-while e labeled loop
@@ -201,10 +203,10 @@ do{
 		if (c==60){
 		break teste;
 	}
-	System.out.println(c);
+	System.out.print(c+" ");
 	++c;
 } while (c<80);
-System.out.println(c);//60
+System.out.print(c+" ");//60
 
 
 //DIVISÃO POR ZERO E POR 0,0:
@@ -221,49 +223,57 @@ System.out.println(c);//60
 //exercícios de fixação
 
 	//imprimir números de 150 a 300
-	System.out.println("\n\nExibe números de 150 a 300");
-	for (int i=150; i<=300; i++){
+	System.out.println("\n\nExibe múltiplos de 20, do 100 ao 500");
+	for (int i=100; i<500; i++){
+		if (i % 20 == 0){
 		System.out.print(i+" ");
-		if (i % 10 == 0){
-			System.out.print("\n");
 		}
 	}
 	
 	
 	
-	System.out.println("\n\nExibe a soma de um até cem (Fibonacci)\n");  //imprime a soma de um até mil (Fibonacci)
+	System.out.println("\n\nExibe a soma de um até "+repet+" (Fibonacci)\n");  //imprime a soma de um até mil (Fibonacci)
 
 	int somai=0;
-	for (int i=1; i<=100; i++){
+	for (int i=1; i<=repet; i++){
 		somai=somai+i;
 		System.out.print(somai+" ");
 	}
 
 	
 		
-	System.out.println("\n\n\nExibe os múltiplos de 3 até 100\n");  //imprime múltiplos de 3 até 100
+	System.out.println("\n\nExibe os múltiplos de 3 até 60\n");  //imprime múltiplos de 3 até 100
 
-	for (int i=1; i<=100; i++){
+	for (int i=1; i<=60; i++){
 		if(i % 3 == 0){
 			System.out.print(i+" ");
 		}
 	}
 	
 
-	System.out.println("\n\n\nExibe o fatorial de 5:\n");	//exibe os fatoriais com algoritmo enxuto
-		long fat=1;
-		String mult="";
-		for (int i=5; i>1; i--){
-			fat *=i;
-			mult +=i+" x ";
+	System.out.println("\n\nExibe o fatorial de "+repet+":\n");	//exibe os fatoriais com algoritmo enxuto
+		long f=1;
+		String m="";
+		for (int i=repet; i>1; i--){
+			f *=i;
+			m +=i+" x ";
 		}
-		System.out.println(mult+"1 = "+fat);
+		System.out.println(m+"1 = "+f);
 
 
-System.out.println("\n\nExibe o fatorial de todos os números abaixo do escolhido\n"); 	
-	for (int j=10; j > 1; j--){	
+System.out.println("\nExibe o fatorial de todos os números abaixo do escolhido\n"); 	
+	for (int j=repet; j >=0; j--){
 		long fat=1;
-		String mult="";
+		String mult="("+j+"!): ";
+		if (j == 1 ){
+			mult +="1 x 1";
+			System.out.println(mult+" = "+fat);
+			continue;
+		}
+		if (j == 0 ){
+			System.out.println(mult+fat);
+			continue;
+		}
 		for (int i=j; i>1; i--){
 			fat *=i;
 			mult +=i+" x ";
@@ -275,5 +285,14 @@ System.out.println("\n\nExibe o fatorial de todos os números abaixo do escolhid
 	
 //fecha main
 	}
+	
+public class Fatorial{
+	public int fatorialRecursivo(int num){
+		if (num == 0)
+			return 1;
+		return num * fatorialRecursivo(num-1);
+	}
+}
+	
 //fecha classe
 }
