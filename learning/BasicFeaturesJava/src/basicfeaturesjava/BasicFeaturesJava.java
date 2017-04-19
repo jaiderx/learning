@@ -3,19 +3,13 @@
  *
  * Versão 1.0
  *
- * 23/03/2017
+ * INICIO: 23/03/2017
  *
  * GNU Public license
  *
  * Início dos estudos de programação  em Java
  * Jaider Xavier Jr.
- *  
- * Histórico de alterações
- * 23/03/2017 - Alterado arquivo fonte com convenção de códigos Java
- * 23/03/2017 - Inseridas variáveis para melhor legibilidade no trecho de data
- * 23/03/2017 - Trabalhando com package, compilando e executando
- * 23/03/2017 - Inserida a variável gendia, para dar gênero ao dia da semana
- * 23/03/2017 - Melhorado aninhamento if/else - Jaider
+ * Historico de alteracoes no GIT
  *
  */
  	
@@ -25,15 +19,13 @@ import java.util.Calendar;
 //import java.util.*; //Date;
 
 public class BasicFeaturesJava {
-		/*Sequencia de exercícios trabalhando
-		* com variaveis e comentários no código.
-		*/
 	public static void main(String[] args){
 		
 		//definição  da variável com valor a ser usado nas próximas repetições
-	byte repet=10;
+	int repet=10;
     
 		//pequenos cálculos
+calculos:{
 		int um = 5%2; //usando percentual para extrair o mod
 		int dois = um+um;
 		int tres = 27/9;
@@ -42,11 +34,11 @@ public class BasicFeaturesJava {
 		int seis = tres*dois;
 		int sete = ((((seis*cinco)/tres)-quatro)+um);
 		int oito = (int)Math.pow(dois,tres);
-		int nove = 3*tres;
-		
+		int nove = 3*tres;	
 		//exibindo calculos
 		System.out.println("\n\n"+um+", "+dois+", "+tres+", "+quatro+", "+cinco+", "+seis+", "+sete+", "+oito+", "+nove);
-
+}
+calculario:{
 		//-------------Trabalhando com data / classe Calendar
 		final Calendar data2 = Calendar.getInstance();
 		
@@ -54,7 +46,6 @@ public class BasicFeaturesJava {
 		System.out.println("\nData usando Metodo getTime na classe Calendar:");
 		System.out.println(data2.getTime());
 	
-		
 		//Formatando dias da semana:
 		String nomedia ="";
 		String gendia ="";
@@ -133,36 +124,32 @@ public class BasicFeaturesJava {
 		int horaint = data2.get(Calendar.HOUR_OF_DAY);
 		int ano = data2.get(Calendar.YEAR);
 		
-		if (horaint > 5 && horaint < 12){	
-		saudacao="Bom dia";
-		}
-		else if (horaint >= 12 && horaint < 18){
-		saudacao="Boa tarde";
-		}
-		else {
-		saudacao="Boa noite";
-		}
+		if (horaint > 5 && horaint < 12)
+			saudacao="Bom dia";
+		else if (horaint >= 12 && horaint < 18)
+				saudacao="Boa tarde";
+		else
+			saudacao="Boa noite";
 		System.out.println("\nData completa formatada: ");
 		System.out.println(saudacao+", estamos em "+gendia+" "+nomedia+", "+dia+" de "+mesnome+" de "+ano+".\n");
 
 	//Testes usando OR no if
 	boolean aberto = true;
-	if (saudacao == "Bom dia" || saudacao == "Boa tarde"){
+	if (saudacao == "Bom dia" || saudacao == "Boa tarde")
 		System.out.println("é de dia");
-
-	}
 	else {
 		System.out.println("É de noite");
 		aberto=false;
 	}
-
 	//Teste usando negação
-	if (!aberto){
+negar:{	if (!aberto)
 	System.out.println ("Estabelecimento Fechado!");
-	}
+}
 
-		
+}
+	
 	//Teste contando números primos /*9223372036854775807L*/
+primos:{
 	System.out.println("\nNúmeros primos com cálculo da diferença para o anterior:");
 	boolean primo;
 	long num=10, quociente=2, quocienteant=0, diferenca=0;
@@ -183,19 +170,22 @@ public class BasicFeaturesJava {
 		}
 		quociente++;
 	}
+}
 	//FIM PRIMOS
 	
 	
-//TESTES COM INCREMENTO
-int a=53, b=5, c=2;
-System.out.println("\nA="+a+", B="+b+", C="+c+"\n\nApós incremento:");
-b=b+a++;
-c=c+(++a);	
-System.out.print("A="+a+"\nB="+b+"\nC="+c);
+/*//TESTES COM INCREMENTO
+* Usando o do-while e labeled loop
+* Laço com alias para que o break pare no escopo anterior
+*/
+incremento:{
+	int a=53, b=5, c=2;
+	System.out.println("\nA="+a+", B="+b+", C="+c+"\n\nApós incremento:");
+	b=b+a++;
+	c=c+(++a);	
+	System.out.print("A="+a+"\nB="+b+"\nC="+c);
 	
-	
-//Usando o do-while e labeled loop
-//Laço com alias para que o break pare no escopo anterior
+
 teste:
 do{
 	c++;
@@ -207,7 +197,7 @@ do{
 	++c;
 } while (c<80);
 System.out.print(c+" ");//60
-
+}
 
 //DIVISÃO POR ZERO E POR 0,0:
 
@@ -222,16 +212,16 @@ System.out.print(c+" ");//60
 	
 //exercícios de fixação
 
+multiplos20:{
 	//imprimir números de 150 a 300
 	System.out.println("\n\nExibe múltiplos de 20, do 100 ao 500");
 	for (int i=100; i<500; i++){
-		if (i % 20 == 0){
+		if (i % 20 == 0)
 		System.out.print(i+" ");
-		}
 	}
+}
 	
-	
-	
+fibonaci:{
 	System.out.println("\n\nExibe a soma de um até "+repet+" (Fibonacci)\n");  //imprime a soma de um até mil (Fibonacci)
 
 	int somai=0;
@@ -239,19 +229,19 @@ System.out.print(c+" ");//60
 		somai=somai+i;
 		System.out.print(somai+" ");
 	}
-
+}
 	
-		
+multiplos3:{	
 	System.out.println("\n\nExibe os múltiplos de 3 até 60\n");  //imprime múltiplos de 3 até 100
 
 	for (int i=1; i<=60; i++){
-		if(i % 3 == 0){
+		if(i % 3 == 0)
 			System.out.print(i+" ");
-		}
 	}
-	
-
-	System.out.println("\n\nExibe o fatorial de "+repet+":\n");	//exibe os fatoriais com algoritmo enxuto
+}
+	//exibe os fatoriais com algoritmo enxuto
+fatorial:{
+	System.out.println("\n\nExibe o fatorial de "+repet+":\n");	
 		long f=1;
 		String m="";
 		for (int i=repet; i>1; i--){
@@ -259,8 +249,10 @@ System.out.print(c+" ");//60
 			m +=i+" x ";
 		}
 		System.out.println(m+"1 = "+f);
+}
 
 
+fatorialvarios:{
 System.out.println("\nExibe o fatorial de todos os números abaixo do escolhido\n"); 	
 	for (int j=repet; j >=0; j--){
 		long fat=1;
@@ -280,19 +272,72 @@ System.out.println("\nExibe o fatorial de todos os números abaixo do escolhido\
 		}
 		System.out.println(mult+"1 = "+fat);
 	}
+}
 	
+exercicio1:{
+	while (repet > 1){
+		System.out.print(repet+" -> ");
+		if(repet % 2 == 0){
+			repet/=2;
+		}else {
+		repet=repet*3+1;
+		}
+	}
+}
+
+		
+exercicio2:{		
+			String acumula="";
+		for (int i=1; i <= repet; i++){
+			for (int j=1; j<=i; j++){
+				int calc=j*i;
+					System.out.print(" "+calc+" ");
+			}
+			System.out.println("");
+		}
+}
+
+//ENCERRADO CAPITULO 3 CAELUM	
+
+	//desafio 170 somatematica:
+soma170:{
+boolean calcular=true;
+long numcalc=1, conta=0;
+String testa="";
+	while (calcular){
+		numcalc=conta*conta;
+		testa=""+numcalc;
+		if (testa.startsWith("999")){
+			calcular=false;
+			continue;
+		}
+		conta++;
+	}
+System.out.println("\n"+conta+" - "+testa);
+}
+
+//desafio 189 somatematica:
+soma189:{
 	
-	
+}
+
+
+		
+		
 //fecha main
 	}
 	
-public class Fatorial{
-	public int fatorialRecursivo(int num){
+/**
+	//usar no futuro
+	private int fatorialRecursivo(int num){
 		if (num == 0)
 			return 1;
 		return num * fatorialRecursivo(num-1);
 	}
-}
+	system.out.println(fatorialRecursivo(10));
+*/
+
+
 	
 //fecha classe
 }
