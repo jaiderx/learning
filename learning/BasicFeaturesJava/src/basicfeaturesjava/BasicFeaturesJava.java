@@ -38,7 +38,7 @@ calculos:{
 		//exibindo calculos
 		System.out.println("\n\n"+um+", "+dois+", "+tres+", "+quatro+", "+cinco+", "+seis+", "+sete+", "+oito+", "+nove);
 }
-calculario:{
+calendario:{
 		//-------------Trabalhando com data / classe Calendar
 		final Calendar data2 = Calendar.getInstance();
 		
@@ -243,13 +243,15 @@ multiplos3:{
 fatorial:{
 	System.out.println("\n\nExibe o fatorial de "+repet+":\n");	
 		long f=1;
-		String m="";
+	//	String m="";
 		for (int i=repet; i>1; i--){
 			f *=i;
-			m +=i+" x ";
+	//		m +=i+" x ";
 		}
-		System.out.println(m+"1 = "+f);
+		System.out.println(/*m+"1 = "+*/f);
 }
+
+	System.out.println(fatorialRecursivo(repet));
 
 
 fatorialvarios:{
@@ -316,27 +318,21 @@ String testa="";
 System.out.println("\n"+conta+" - "+testa);
 }
 
-//desafio 189 somatematica:
-soma189:{
+
+
+
 	
-}
-
-
-		
-		
 //fecha main
 	}
 	
-/**
-	//usar no futuro
-	private int fatorialRecursivo(int num){
+
+
+	//Fatorial Recursivo
+private static int fatorialRecursivo(int num){
 		if (num == 0)
 			return 1;
 		return num * fatorialRecursivo(num-1);
-	}
-	system.out.println(fatorialRecursivo(10));
-*/
-
+}
 
 	
 //fecha classe
