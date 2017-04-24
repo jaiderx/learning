@@ -16,7 +16,8 @@
 package basicfeaturesjava;
 
 import java.util.Calendar;
-//import java.util.*; //Date;
+import java.util.Scanner;
+//import java.util.Date;
 
 public class BasicFeaturesJava {
 	public static void main(String[] args){
@@ -276,7 +277,7 @@ System.out.println("\nExibe o fatorial de todos os números abaixo do escolhido\
 	}
 }
 	
-exercicio1:{
+/*exercicio1:{
 	while (repet > 1){
 		System.out.print(repet+" -> ");
 		if(repet % 2 == 0){
@@ -285,7 +286,7 @@ exercicio1:{
 		repet=repet*3+1;
 		}
 	}
-}
+}*/
 
 		
 exercicio2:{		
@@ -320,7 +321,6 @@ System.out.println("\n"+conta+" - "+testa);
 
 
 
-
 	
 //fecha main
 	}
@@ -334,6 +334,7 @@ private static int fatorialRecursivo(int num){
 		return num * fatorialRecursivo(num-1);
 }
 
-	
+
+			
 //fecha classe
 }
